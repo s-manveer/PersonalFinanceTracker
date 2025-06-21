@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		12DC49F92E0346F3004B63E9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 12DC49F82E0346F3004B63E9 /* FirebaseAuth */; };
+		12DC49FB2E0346F3004B63E9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 12DC49FA2E0346F3004B63E9 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		12DC497B2E00BBE0004B63E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12DC49F92E0346F3004B63E9 /* FirebaseAuth in Frameworks */,
+				12DC49FB2E0346F3004B63E9 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,8 @@
 			);
 			name = PersonalFinanceTracker;
 			packageProductDependencies = (
+				12DC49F82E0346F3004B63E9 /* FirebaseAuth */,
+				12DC49FA2E0346F3004B63E9 /* FirebaseFirestore */,
 			);
 			productName = PersonalFinanceTracker;
 			productReference = 12DC496A2E00BBDD004B63E9 /* PersonalFinanceTracker.app */;
@@ -195,6 +204,9 @@
 			);
 			mainGroup = 12DC49612E00BBDD004B63E9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				12DC49F72E0346F3004B63E9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 12DC496B2E00BBDD004B63E9 /* Products */;
 			projectDirPath = "";
@@ -552,6 +564,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		12DC49F72E0346F3004B63E9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		12DC49F82E0346F3004B63E9 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12DC49F72E0346F3004B63E9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		12DC49FA2E0346F3004B63E9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12DC49F72E0346F3004B63E9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 12DC49622E00BBDD004B63E9 /* Project object */;
 }
